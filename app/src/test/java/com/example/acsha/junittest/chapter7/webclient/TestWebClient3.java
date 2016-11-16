@@ -17,7 +17,7 @@ import org.mockito.runners.MockitoJUnitRunner;
  */
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestWebClient2 {
+public class TestWebClient3 {
 
 	@Mock
 	private ConnectionFactory connectionFactory;
@@ -35,8 +35,7 @@ public class TestWebClient2 {
 		String result = webClient3.getContent(connectionFactory);
 
 		// then
-		assertEquals("It work1s", result);
+		assertEquals("It works", result);
 		verify(byteArrayInputStream, times(1)).close();
 	}
-
 }
